@@ -1,0 +1,28 @@
+Automated Linux Scripts
+
+uptime: the amount of time machine has been up
+#!bin/usr/env bash: tells the machine to use bash script
+df -h: shows disk usage
+free -h: shows memory usage
+chmod +x: changes permissions to execute
+echo: prints out script on screen
+hostname: prints out hostname of machine
+
+Code:
+#!/usr/bin/env bash
+echo "LINUX SYSTEM REPORT"
+echo
+date
+echo "Hostname:"
+hostname
+echo "System uptime:"
+uptime
+echo "Memory usage:"
+free -h
+echo "Filesystem disk usage:"
+df -h
+echo
+echo "END OF REPORT"
+echo
+
+Using these scripts and automating them can help find out which filesystem is using a lot of space, how much memory you have, etc.
